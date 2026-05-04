@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task Manager</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>Task Manager</h1>
+
+<a href="/logout">Logout</a>
+
+<div class="add">
+<input id="taskInput" placeholder="New task">
+<button onclick="addTask()">Add</button>
+</div>
+
+<div class="filters">
+<button onclick="filterTasks('all')">All</button>
+<button onclick="filterTasks('done')">Completed</button>
+<button onclick="filterTasks('todo')">Pending</button>
+</div>
+
+<ul id="taskList"></ul>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
